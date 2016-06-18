@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PoeReborn.iml" filepath="$PROJECT_DIR$/PoeReborn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-deploy/app-deploy.iml" filepath="$PROJECT_DIR$/app-deploy/app-deploy.iml" />
     </modules>
   </component>
 </project>
