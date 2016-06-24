@@ -5,6 +5,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/app-deploy/pom.xml" />
+        <option value="$PROJECT_DIR$/app-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/app-dao-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/app-core/pom.xml" />
+        <option value="$PROJECT_DIR$/app-security/pom.xml" />
+        <option value="$PROJECT_DIR$/app-web/pom.xml" />
       </list>
     </option>
   </component>

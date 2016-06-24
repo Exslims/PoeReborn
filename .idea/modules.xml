@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PoeReborn.iml" filepath="$PROJECT_DIR$/PoeReborn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-core/app-core.iml" filepath="$PROJECT_DIR$/app-core/app-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-dao/app-dao.iml" filepath="$PROJECT_DIR$/app-dao/app-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-dao-impl/app-dao-impl.iml" filepath="$PROJECT_DIR$/app-dao-impl/app-dao-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-deploy/app-deploy.iml" filepath="$PROJECT_DIR$/app-deploy/app-deploy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-security/app-security.iml" filepath="$PROJECT_DIR$/app-security/app-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-web/app-web.iml" filepath="$PROJECT_DIR$/app-web/app-web.iml" />
     </modules>
   </component>
 </project>
