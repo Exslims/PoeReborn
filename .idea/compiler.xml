@@ -17,27 +17,57 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile default="false" name="Annotation profile for app-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="app-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for app-dao" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="app-dao" />
+      </profile>
+      <profile default="false" name="Annotation profile for app-core" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="app-core" />
-        <module name="app-dao" />
-        <module name="app-dao-impl" />
+      </profile>
+      <profile default="false" name="Annotation profile for app-deploy" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="app-deploy" />
+      </profile>
+      <profile default="false" name="Annotation profile for app-dao-impl" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="app-dao-impl" />
+      </profile>
+      <profile default="false" name="Annotation profile for app-security" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="app-security" />
-        <module name="app-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-core" target="1.5" />
-      <module name="app-dao" target="1.5" />
-      <module name="app-dao-impl" target="1.5" />
-      <module name="app-deploy" target="1.5" />
-      <module name="app-security" target="1.5" />
-      <module name="app-web" target="1.5" />
-      <module name="PoeReborn" target="1.5" />
+      <module name="app-core" target="1.8" />
+      <module name="app-dao" target="1.8" />
+      <module name="app-dao-impl" target="1.8" />
+      <module name="app-deploy" target="1.8" />
+      <module name="app-security" target="1.8" />
+      <module name="app-web" target="1.8" />
+      <module name="PoeReborn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
