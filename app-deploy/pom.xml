@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>app-deploy</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <!--Internal lib-->
