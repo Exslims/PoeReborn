@@ -1,14 +1,52 @@
-<!--VERY DIRTY CODE, PLS DON'T LOOK-->
-<!--VERY DIRTY CODE, PLS DON'T LOOK-->
-<!--VERY DIRTY CODE, PLS DON'T LOOK-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="sockjs-0.3.4.js"></script>
+    <script src="stomp.js"></script>
     <title>Title</title>
+    <script type="text/javascript">
+        var socket;
+        function connect(){
+            socket = new WebSocket("ws://localhost:8080/app");
+
+            socket.onopen = function() {
+                alert("Соединение установлено.");
+            };
+
+            socket.onclose = function(event) {
+                if (event.wasClean) {
+                    alert('Соединение закрыто чисто');
+                } else {
+                    alert('Обрыв соединения'); // например, "убит" процесс сервера
+                }
+                alert('Код: ' + event.code + ' причина: ' + event.reason);
+            };
+
+            socket.onmessage = function(event) {
+                alert("Получены данные " + event.data);
+            };
+
+            socket.onerror = function(error) {
+                alert("Ошибка " + error.message);
+            };
+        }
+
+        function send(){
+            socket.send('123');
+        }
+    </script>
 </head>
 <body>
-    <h1>Hello world</h1>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div>
+    <div>
+        <button id="connect" onclick="connect();">Connect</button>
+        <button id="send" onclick="send();">Send</button>
+        <!--<button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>-->
+    </div>
+</div>
 </body>
 </html>

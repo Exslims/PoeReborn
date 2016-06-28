@@ -1,5 +1,7 @@
 package poe.reborn.com;
 
+import org.apache.log4j.Logger;
+
 import org.springframework.stereotype.Controller;
 
 /**
@@ -8,4 +10,6 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class PageController {
+    Logger logger = Logger.getLogger(PageController.class);
 }
+
